@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ConfigurationList",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string",
+      "description": "MongoDB ObjectId"
+    },
+    "applicableDataSegmentIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "Array of MongoDB ObjectId"
+      }
+    },
+    "readOnly": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "string"
+    },
+    "configurations": {
+      "type": "array",
+      "items": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "title": "Configuration",
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string",
+            "description": "MongoDB ObjectId"
+          },
+          "name": {
+            "type": "string"
+          },
+          "descriptor": {
+            "type": "string"
+          },
+          "details": {
+            "type": "array",
+            "items": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "title": "Detail",
+              "type": "object",
+              "properties": {
+                "_id": {
+                  "type": "string",
+                  "description": "MongoDB ObjectId"
+                },
+                "identifier": {
+                  "type": "string"
+                },
+                "descriptor": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "__v": {
+      "type": "integer"
+    }
+  }
+}
