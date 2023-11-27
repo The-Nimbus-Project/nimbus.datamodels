@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/csharp-models/Nimbus.DataModels/.vs
+/csharp-models/Nimbus.DataModels/Nimbus.DataModels/obj
