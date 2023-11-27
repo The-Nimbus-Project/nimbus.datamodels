@@ -1,6 +1,6 @@
 # Nimbus Data Models
 
-![Shell Script](https://img.shields.io/badge/Shell%20Script-121011.svg?&logo=gnu-bash&logoColor=white)![.NET 6.0](https://img.shields.io/badge/.NET-6.0-blueviolet)![TypeScript](https://img.shields.io/badge/TypeScript-3178C6.svg?&logo=typescript&logoColor=white)![JSON](https://img.shields.io/badge/JSON-%20Schema-lightgrey)![Quicktype](https://img.shields.io/badge/Quicktype-Tool-teal)
+![.NET 6.0](https://img.shields.io/badge/.NET-6.0-blueviolet) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6.svg?&logo=typescript&logoColor=white) ![JSON](https://img.shields.io/badge/JSON-%20Schema-lightgrey) ![Shell Script](https://img.shields.io/badge/Shell%20Script-121011.svg?&logo=gnu-bash&logoColor=white) ![Quicktype](https://img.shields.io/badge/Quicktype-Tool-teal)
 
 ## Overview
 
