@@ -5,7 +5,7 @@ JSON_SCHEMA_DIR="../datamodels-json/models"
 
 # Define the output directories for TypeScript and C# models
 TYPESCRIPT_OUTPUT_DIR="../typescript-models/src"
-CSHARP_OUTPUT_DIR="../csharp-models/Nimbus.DataModels/Models"
+CSHARP_OUTPUT_DIR="../csharp-models/Nimbus.DataModels/Nimbus.DataModels/Models"
 
 # Define the base namespace for C# models
 CSHARP_NAMESPACE_BASE="Nimbus.DataModels.Models"
