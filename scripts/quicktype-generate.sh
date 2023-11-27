@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the input directory for JSON Schema files
-JSON_SCHEMA_DIR="../datamodels-json/models"
+JSON_SCHEMA_DIR="../json-schemas/models"
 
 # Define the output directories for TypeScript and C# models
 TYPESCRIPT_OUTPUT_DIR="../typescript-models/src"
