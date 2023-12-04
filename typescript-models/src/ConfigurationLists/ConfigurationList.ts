@@ -1,5 +1,4 @@
 export interface ConfigurationList {
-    __v?: number;
     /**
      * MongoDB ObjectId
      */

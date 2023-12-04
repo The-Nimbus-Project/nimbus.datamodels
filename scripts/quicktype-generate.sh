@@ -10,7 +10,13 @@ CSHARP_OUTPUT_DIR="../csharp-models/Nimbus.DataModels/Nimbus.DataModels/Models"
 # Define the base namespace for C# models
 CSHARP_NAMESPACE_BASE="Nimbus.DataModels.Models"
 
-# Ensure the output directories exist
+# Remove the existing output directories if they exist
+echo "Removing existing models..."
+rm -rf "$TYPESCRIPT_OUTPUT_DIR"
+rm -rf "$CSHARP_OUTPUT_DIR"
+
+# Recreate the output directories
+echo "Recreating model directories..."
 mkdir -p "$TYPESCRIPT_OUTPUT_DIR"
 mkdir -p "$CSHARP_OUTPUT_DIR"
 
@@ -54,7 +60,8 @@ for SUBDIR_FULL_PATH in "$JSON_SCHEMA_DIR"/*/; do
             -e 's/using Newtonsoft.Json.Converters;/using MongoDB.Bson.Serialization.Attributes;/g' \
             -e 's/, NullValueHandling = NullValueHandling.Ignore//g' \
             -e 's/\[JsonProperty(\(.*\))\]/\[BsonElement(\1)\]/g' \
-            -e '/\[BsonElement("_id")\]/{n;s/public string/public ObjectId/;}' \
+            -e '/\[BsonElement(".*_ids.*")\]/{n;s/public List<string>/public List<ObjectId>/;}' \
+            -e '/\[BsonElement(".*_id.*")\]/{n;s/public string/public ObjectId/;}' \
             "$CSHARP_OUTPUT_DIR/$SUBDIR_NAME/$MODEL_NAME.cs"
     done
 done

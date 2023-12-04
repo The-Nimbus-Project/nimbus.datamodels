@@ -9,9 +9,6 @@ namespace Nimbus.DataModels.Models.ConfigurationLists
 
     public partial class ConfigurationList
     {
-        [BsonElement("__v")]
-        public long? V { get; set; }
-
         /// <summary>
         /// MongoDB ObjectId
         /// </summary>

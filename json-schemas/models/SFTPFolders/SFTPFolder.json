@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "SFTPFolder",
+    "type": "object",
+    "properties": {
+      "_id": {
+        "type": "string",
+        "description": "MongoDB ObjectId"
+      },
+      "name": {
+        "type": "string"
+      },
+      "path": {
+        "type": "string"
+      },
+      "sftp_id": {
+        "type": "string",
+        "description": "MongoDB ObjectId"
+      },
+      "patterns": {
+        "type": "array",
+        "items": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "title": "SFTPFolderPattern",
+          "type": "object",
+          "properties": {
+            "_id": {
+              "type": "string",
+              "description": "MongoDB ObjectId"
+            },
+            "fileType": {
+              "type": "string"
+            },
+            "descriptor": {
+              "type": "string"
+            },
+            "regexPatterns": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }

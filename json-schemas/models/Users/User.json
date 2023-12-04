@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "User",
+    "type": "object",
+    "properties": {
+        "_id": {
+            "type": "string",
+            "description": "MongoDB ObjectId"
+        },
+        "firstName": {
+            "type": "string"
+        },
+        "lastName": {
+            "type": "string"
+        },
+        "middleInitial": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "userName": {
+            "type": "string"
+        },
+        "passwordHash": {
+            "type": "string"
+        },
+        "approvedDataSegment_ids": {
+            "type": "array",
+            "description": "List of MongoDB ObjectId",
+            "items": {
+                "type": "string"                
+            }
+        },
+        "organization_id": {
+            "type": "string",
+            "description": "MongoDB ObjectId"
+        },
+        "isActive": {
+            "type": "boolean"
+        },
+        "isDeleted": {
+            "type": "boolean"
+        }
+    }
+}
